@@ -1,0 +1,25 @@
+{
+  "name": "@rynz/node-test-protocol",
+  "version": "0.0.1-alpha",
+  "description": "",
+  "main": "lib/protocol.js",
+  "scripts": {
+    "test": "jest --colors",
+    "test:coverage": "jest --coverage",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
+    "test:watch": "jest --watch",
+    "lint": "eslint lib",
+    "format": "prettier --write \"**/*.+(js|json|md|ts|vue|yml)\"",
+    "validate": "npm run lint && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rynz/node-test-protocol.git"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
+  }
+}
